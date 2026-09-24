@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recovery-lab-math"
+version = "1.0.0"
+description = "Home recovery purchase vs gym drop-in, in the terminal: true heater draw, per-session supplies, amortized hardware, and the break-even frequency"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "James Verlander"}]
+keywords = ["sauna", "cold-plunge", "recovery", "biohacking", "cost-per-session", "break-even", "longevity", "cli"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://hackedself.com/"
+"Source Code" = "https://github.com/scrapertweeter3-prog/recovery-lab-math"
+"Bug Tracker" = "https://github.com/scrapertweeter3-prog/recovery-lab-math/issues"
+
+[project.scripts]
+recoveryspend = "recoveryspend:main"
+
+[tool.setuptools]
+py-modules = ["recoveryspend"]
